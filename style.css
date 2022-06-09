@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  transition: 0.2s linear;
+}
+.container {
+  /* background-color: #eee; */
+  padding: 3em 2em;
+  text-align: center;
+}
+.title {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1em;
+}
+.teams-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.team {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding: 0.5em;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+.team.active {
+  flex: 5;
+}
+img,
+.team h3,
+.team p {
+  margin-bottom: 0.5em;
+}
+img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.team h3 {
+  font-size: 1rem;
+}
+.team.active h3 {
+  font-size: 1.5rem;
+}
+.team p {
+  font-size: 0.5rem;
+  color: #235789;
+}
+.team.active p {
+  font-size: 1rem;
+}
+.social-list i {
+  /* padding-left: 0.1em; */
+  font-size: 1.5rem;
+  background-color: #eee;
+  color: #477890;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+i:hover {
+  background-color: #477890;
+  color: #fff;
+}
+@media (min-width: 800px) {
+  .container {
+    padding: 3em 2em;
+  }
+  .teams-container {
+    flex-direction: row;
+    margin: 0 5em;
+  }
+  .social-list i {
+    padding: 0.5em;
+  }
+}
